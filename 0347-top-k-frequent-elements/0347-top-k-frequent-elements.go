@@ -11,8 +11,6 @@ func topKFrequent(nums []int, k int) []int {
 	sort.Slice(groupArrays, func(i, j int) bool {
 		return groupArrays[i][1] > groupArrays[j][1]
 	})
-	jsoned, _ := json.Marshal(groupArrays)
-	fmt.Println(string(jsoned))
 	for i := 0; i < k; i++ {
 		results = append(results, groupArrays[i][0])
 	}
