@@ -19,6 +19,7 @@
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/bete7512/dsa-collection/tree/master/0049-group-anagrams) |
+| [0125-valid-palindrome](https://github.com/bete7512/dsa-collection/tree/master/0125-valid-palindrome) |
 ## Sorting
 |  |
 | ------- |
@@ -52,4 +53,8 @@
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/bete7512/dsa-collection/tree/master/0036-valid-sudoku) |
+## Two Pointers
+|  |
+| ------- |
+| [0125-valid-palindrome](https://github.com/bete7512/dsa-collection/tree/master/0125-valid-palindrome) |
 <!---LeetCode Topics End-->
