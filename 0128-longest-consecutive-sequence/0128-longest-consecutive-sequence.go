@@ -1,16 +1,11 @@
-
 func longestConsecutive(nums []int) int {
 	maps := make(map[int]int)
 	largestConsecutiveCount := 0
-
-	// put all nums into the map (use int for lighter memory)
 	for i := 0; i < len(nums); i++ {
 		maps[nums[i]] = i
 	}
 
-	// iterate over map keys instead of nums
-	for num := range maps {
-		// only start from the beginning of a sequence
+	for num := range maps{
 		if _, ok := maps[num-1]; ok {
 			continue
 		}
@@ -18,7 +13,8 @@ func longestConsecutive(nums []int) int {
 		countConsecutive := 1
 		k := num + 1
 		for {
-			if _, ok := maps[k]; !ok {
+			_, ok := maps[k]
+			if !ok {
 				break
 			}
 			countConsecutive++
@@ -29,6 +25,5 @@ func longestConsecutive(nums []int) int {
 			largestConsecutiveCount = countConsecutive
 		}
 	}
-
 	return largestConsecutiveCount
 }
