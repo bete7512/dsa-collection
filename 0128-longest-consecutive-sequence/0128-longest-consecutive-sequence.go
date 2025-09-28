@@ -1,10 +1,11 @@
+
 func longestConsecutive(nums []int) int {
-	maps := make(map[int]struct{})
+	maps := make(map[int]int)
 	largestConsecutiveCount := 0
 
-	// put all nums into the map (use struct{} for lighter memory)
+	// put all nums into the map (use int for lighter memory)
 	for i := 0; i < len(nums); i++ {
-		maps[nums[i]] = struct{}{}
+		maps[nums[i]] = i
 	}
 
 	// iterate over map keys instead of nums
