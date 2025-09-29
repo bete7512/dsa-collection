@@ -1,0 +1,30 @@
+func threeSum(nums []int) [][]int {
+	results := [][]int{}
+	sort.Ints(nums)
+	for i := 0; i < len(nums); i++ {
+		if i > 0 && nums[i] == nums[i-1] {
+			continue
+		}
+		k := len(nums) - 1
+		for j := i + 1; j < k; {
+			sum := nums[i] + nums[j] + nums[k]
+			if sum == 0 {
+				results = append(results, []int{nums[i], nums[j], nums[k]})
+				
+				for j < k && nums[j] == nums[j+1] {
+					j++
+				}
+				for j < k && nums[k] == nums[k-1] {
+					k--
+				}
+				j++
+				k--
+			} else if sum < 0 {
+				j++
+			} else {
+				k--
+			}
+		}
+	}
+	return results
+}
