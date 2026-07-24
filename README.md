@@ -25,6 +25,7 @@
 | ------- |
 | [0049-group-anagrams](https://github.com/bete7512/dsa-collection/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/bete7512/dsa-collection/tree/master/0125-valid-palindrome) |
+| [2129-capitalize-the-title](https://github.com/bete7512/dsa-collection/tree/master/2129-capitalize-the-title) |
 ## Sorting
 |  |
 | ------- |
