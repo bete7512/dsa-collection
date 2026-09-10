@@ -1,30 +1,34 @@
 func threeSum(nums []int) [][]int {
+	if len(nums) == 0 {
+		return [][]int{}
+	}
+	slices.Sort(nums)
 	results := [][]int{}
-	sort.Ints(nums)
-	for i := 0; i < len(nums); i++ {
+	for i := 0; i <= len(nums)-3; i = i + 1 {
 		if i > 0 && nums[i] == nums[i-1] {
 			continue
 		}
-		k := len(nums) - 1
-		for j := i + 1; j < k; {
-			sum := nums[i] + nums[j] + nums[k]
+		left := i + 1
+		right := len(nums) - 1
+		for left < right {
+			sum := nums[i] + nums[right] + nums[left]
 			if sum == 0 {
-				results = append(results, []int{nums[i], nums[j], nums[k]})
-				
-				for j < k && nums[j] == nums[j+1] {
-					j++
+				results = append(results, []int{nums[i], nums[left], nums[right]})
+				left++
+				right--
+				for left < right && nums[left] == nums[left-1] {
+					left++
 				}
-				for j < k && nums[k] == nums[k-1] {
-					k--
+				for left < right && nums[right] == nums[right+1] {
+					right--
 				}
-				j++
-				k--
 			} else if sum < 0 {
-				j++
+				left++
 			} else {
-				k--
+				right--
 			}
 		}
 	}
+
 	return results
 }
