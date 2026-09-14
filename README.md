@@ -23,6 +23,7 @@
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/bete7512/dsa-collection/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/bete7512/dsa-collection/tree/master/0049-group-anagrams) |
 | [0125-valid-palindrome](https://github.com/bete7512/dsa-collection/tree/master/0125-valid-palindrome) |
 | [2129-capitalize-the-title](https://github.com/bete7512/dsa-collection/tree/master/2129-capitalize-the-title) |
@@ -91,4 +92,12 @@
 |  |
 | ------- |
 | [0700-search-in-a-binary-search-tree](https://github.com/bete7512/dsa-collection/tree/master/0700-search-in-a-binary-search-tree) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/bete7512/dsa-collection/tree/master/0020-valid-parentheses) |
+## Bracket Sequences
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/bete7512/dsa-collection/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
